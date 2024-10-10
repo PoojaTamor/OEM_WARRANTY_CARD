@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Warranty Card</title>
+    <title>OEM_WORRANTY_CARD</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -315,7 +315,7 @@
       }
 
       .yellow-bg p {
-        font-size: 30px;
+        font-size: 25px;
         
         /* font-weight:; */
       }
@@ -359,7 +359,7 @@
         outline: none;
       }
       .form-check-label{
-        font-size: 16px;
+        font-size: 13px;
       }
       .form-check{
         padding-block: 10px;
@@ -429,20 +429,33 @@ div:where(.swal2-container) .swal2-html-container{
 
 
 
-/* ========heading2=============== */
-.lest-div h1{
-  /* color: #444444; */
-  padding-top: 25px;
+.sidetext h5{
+  margin:15px 0px 0px 0px;
+ font-size: 30px;
+ font-weight: 600;
+
+ letter-spacing: 2px;
+
+  
 }
-.lest-div p{
-  font-size: 17px;
-  padding-bottom: 22px;
-  /* text-transform: capitalize; */
-  font-weight: 500;
+.worantytext{
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.reqsym{
+  font-size: 15px;
+}
+
+.details-text{
+  font-size: 18px;
+  margin-top: 10px;
   color: #444444;
 
-
 }
+ 
+
 
 /* ========heading2=============== */
       @media (max-width: 768px) {
@@ -563,7 +576,7 @@ div:where(.swal2-container) .swal2-html-container{
           /* text-align: center; */
         }
         .form-check-label{
-        font-size: 12px;
+        font-size: 9px;
       }
 
         .Covered {
@@ -601,11 +614,26 @@ div:where(.swal2-container) .swal2-html-container{
           padding: 3px 5px;
           font-weight: 600 !important;
         }
-        .lest-div p {
-    font-size: 12px;
-    padding-bottom: 14px;
-    font-weight: 500;
-  }
+    
+  .logo{
+  width: 130px!important;
+  
+}
+.details-text{
+  font-size: 11px;
+  margin-top: 0px;
+
+}
+.toplogo-row{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.sidelogo {
+    width: 96px;
+    margin-top: 32px !important;
+}
 
   
       }
@@ -618,16 +646,35 @@ div:where(.swal2-container) .swal2-html-container{
         <div class="row warranty-card">
           <div class="col-lg-8 left-section">
             <div class="lest-div">
-              <h1 class="text-center text-uppercase">warranty</h1>
-              <p class="text-center">Fill your details to apply for the warranty</p>
-
-              <!-- <h2 class="left-heading text-muted mt-4">
-                Warranty Card <br /><span class="text-dark">Details</span>
-              </h2> -->
+              <div class="row toplogo-row ">
+                <div class="col-6 logo">
+                  <!-- <img src="" alt=""> -->
+                  <svg width="260" height="50" class=" logo mt-4 ms-2 ms-sm-0"  viewBox="0 0 271 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M89.5146 0.0143433H87.1387V63.9857H89.5146V0.0143433Z" fill="#231F20"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.601081 2.33977H32.5185V13.1409C29.7641 13.351 18.7463 13.6948 15.0974 9.14421C15.0974 9.14421 15.0974 14.1962 24.4634 16.1253C26.4417 16.7174 19.0776 18.6943 18.3535 21.736C18.3535 21.736 20.6583 24.0281 25.8265 23.732L31.2501 44.0689C32.0926 46.4851 34.4873 47.5595 36.8631 47.7314C39.22 47.5595 41.6148 46.4803 42.4761 44.0689L47.8998 23.732C53.0632 24.0281 55.3728 21.736 55.3728 21.736C54.6487 18.6943 47.2988 16.7174 49.2629 16.1253C58.6289 14.1962 58.6289 9.14421 58.6289 9.14421C54.961 13.7139 43.9433 13.3654 41.2078 13.1409V2.33977H73.1252V13.8715H66.9963L47.0101 61.6698H26.6973L6.71102 13.8715H0.582153V2.33977H0.601081Z" fill="#231F20"/>
+                    <path d="M26.6783 62.238H26.3044L6.31818 14.4397H0V1.77154H33.077V13.6662L32.5564 13.7044C31.3116 13.7999 21.3871 14.4254 16.3184 11.0017C16.4415 11.207 16.5929 11.4219 16.768 11.6368C17.7855 12.907 19.9673 14.6212 24.5723 15.5714L24.6196 15.581C25.178 15.7481 25.3295 16.0728 25.3532 16.3116C25.4242 16.9849 24.6906 17.3907 23.2329 18.2025C21.761 19.019 19.5934 20.2223 19.0066 21.545C19.7212 22.0751 21.9077 23.3882 25.7886 23.1685L26.2429 23.1447L31.7802 43.9066C32.722 46.5567 35.609 47.0724 36.8537 47.1727C38.0936 47.0772 40.9711 46.5567 41.9271 43.9066L47.4644 23.1447L47.9187 23.1685C51.7996 23.3882 53.9861 22.0751 54.7007 21.545C54.1139 20.2223 51.9463 19.019 50.4744 18.2025C49.0167 17.3907 48.2879 16.9849 48.3589 16.3116C48.3826 16.0728 48.534 15.7481 49.0877 15.581L49.1351 15.5667C53.74 14.6212 55.9218 12.907 56.9393 11.632C57.1097 11.4171 57.2564 11.207 57.3794 11.0065C55.5763 12.2289 52.978 13.0645 49.6225 13.4943C45.5477 14.0148 41.8467 13.7521 41.1415 13.6948L40.6256 13.6519V1.75722H73.6647V14.4254H67.3465L47.3603 62.2237L26.6783 62.238ZM7.06595 13.3081L27.0522 61.1063H46.622L66.6082 13.3081H72.5478V2.90801H41.752V12.6205C46.4232 12.9261 55.2024 12.5011 58.1745 8.79564L59.1731 9.15377C59.1731 9.21107 59.1589 10.634 57.8811 12.2719C56.3193 14.2822 53.6311 15.729 49.897 16.5742C50.2141 16.7747 50.6448 17.0087 51.0187 17.2188C52.8881 18.2598 55.4485 19.678 55.9076 21.6119L55.9833 21.9223L55.7561 22.1467C55.6615 22.2422 53.4986 24.3337 48.8038 24.3337C48.6429 24.3337 48.4819 24.3337 48.3163 24.3241L43.0015 44.2456L42.992 44.2695C42.5424 45.5253 41.7047 46.5281 40.5026 47.2396C39.4898 47.8412 38.2403 48.2089 36.8915 48.3092H36.8489H36.8063C35.448 48.2089 34.1939 47.8412 33.1811 47.2396C31.979 46.5281 31.146 45.5253 30.7059 44.2647L30.6917 44.2217L25.3863 24.3193C25.2206 24.3241 25.0597 24.3289 24.8988 24.3289C20.1992 24.3289 18.0411 22.2374 17.9465 22.1419L17.7193 21.9175L17.795 21.6071C18.2541 19.6732 20.8145 18.255 22.6839 17.2141C23.0578 17.0039 23.4885 16.77 23.8056 16.5694C20.0667 15.7242 17.3785 14.2774 15.812 12.2671C14.5342 10.6293 14.52 9.2063 14.52 9.149L15.5186 8.79087C18.4387 12.4342 26.9717 12.9165 31.9411 12.6109V2.90323H1.11219V13.3033H7.06595V13.3081Z" fill="#231F20"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M264.436 6.35082H259.996V20.5088L264.578 20.5614V16.5312L262.443 16.4978V10.2616H271V22.6815L267.228 26.831H257.516L253.555 22.8343V3.84869L257.379 0.00955214H267.228L271 4.15906V8.36111H264.44V6.35082H264.436ZM242.642 11.4076L242.589 0.081175H248.889V26.8453H241.127L237.27 15.051L237.303 26.8453H231.037L230.966 0.081175H238.505L242.642 11.4076ZM219.882 0.152798H226.266V26.831H219.882V0.152798ZM208.348 20.5088H214.922V26.8501H201.926V0.0143246H208.348V20.5088ZM190.757 0.152798H197.141V26.831H190.757V0.152798ZM175.295 15.8723H177.155L176.313 11.5986L175.295 15.8723ZM178.532 22.0703H174.003L173.023 26.831H166.431L171.992 0.0286491H180.6L186.161 26.831H179.412L178.532 22.0703ZM156.738 6.52749V26.8501H150.368V6.52749H145.256V0.0859474L161.712 0V6.51317H156.738V6.52749ZM132.516 6.40334V9.99896L140.642 9.94643V16.5455L132.516 16.4739V20.5232L140.642 20.6282V26.831H126.132V0.100272H140.642V6.42244H132.516V6.40334ZM110.244 6.40334V20.4897H114.806V6.40334H110.244ZM103.855 0.081175H117.3L121.243 4.05879V22.8343L117.456 26.8119H103.874V0.081175H103.855Z" fill="#231F20"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M103.599 36.7822H114.584C123.434 36.4718 125.516 46.7716 119.506 49.1162C127.75 53.5474 124.257 63.618 116.889 64H110.741C110.708 62.2619 110.689 60.5285 110.656 58.7904C114.858 59.435 113.997 60.1609 118.54 55.9588C116.732 54.7937 114.186 57.1239 112.875 55.9779C113.651 52.3298 112.994 48.8726 109.259 45.7975C108.621 45.0669 109.33 44.1835 110.741 44.6324C114.768 45.2579 116.543 44.2695 116.751 42.1828C111.242 43.2763 107.144 38.5681 103.599 42.6364V36.7822Z" fill="#FECD06"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M134.996 57.4868H137.959V36.5244H144.428V59.9364L140.42 64H132.535L128.526 59.9364V36.5244H134.996V57.4868Z" fill="#FECD06"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M155.015 57.4868H162.559V64H148.546V36.5244H155.015V57.4868Z" fill="#FECD06"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M173.213 57.4868H180.752V64H166.743V36.5244H173.213V57.4868Z" fill="#FECD06"/>
+                    </svg>
+                    
+                </div>
+                <div class="col-6 sidetext ">
+                  <svg width="170"  class="mt-4 float-end sidelogo" viewBox="0 0 281 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M61.3519 0.688608C69.9118 0.688608 76.8646 3.1923 76.8646 11.786V13.4439C76.8984 22.0376 69.8949 24.5244 61.3519 24.5413C52.792 24.5244 45.7884 22.0376 45.8222 13.4439V11.786C45.7884 3.17538 52.792 0.705525 61.3519 0.688608ZM68.0002 12.8856V12.3274C68.0509 8.6226 64.9721 7.94593 61.3519 7.89518C57.7148 7.94593 54.6359 8.6226 54.6866 12.3274V12.8856C54.6359 16.6073 57.7148 17.284 61.3519 17.3348C64.9721 17.284 68.0509 16.6073 68.0002 12.8856ZM79.5205 24.0169V1.2807H106.131V7.10009H88.385V10.0098H106.131V15.2709H88.385V18.1806H106.131V24.0169H79.5205ZM110.851 23.9831V1.24686H121.948L130.812 12.615L139.694 1.24686H150.774V23.9831H141.91V11.8537L133.028 23.9831H128.596L119.715 11.8537V23.9831H110.851ZM151.451 23.9831H186.384V30.0901H151.451V23.9831ZM195.942 11.803H206.769C207.293 11.803 207.75 11.6169 208.122 11.2447C208.511 10.8556 208.697 10.3989 208.697 9.87445C208.697 9.33311 208.511 8.87635 208.122 8.50418C207.75 8.1151 207.293 7.92901 206.769 7.92901H195.942V11.803ZM187.078 1.2807H208.985C213.671 1.22995 217.646 5.17157 217.579 9.87445C217.646 14.5604 213.671 18.5359 208.985 18.4682H195.942V24.0169H187.078V1.2807ZM228.862 11.803H239.689C240.214 11.803 240.67 11.6169 241.042 11.2447C241.432 10.8556 241.618 10.3989 241.618 9.87445C241.618 9.33311 241.432 8.87635 241.042 8.50418C240.67 8.1151 240.214 7.92901 239.689 7.92901H228.862V11.803ZM219.998 1.2807H241.905C246.591 1.22995 250.567 5.17157 250.499 9.87445C250.567 14.5604 246.591 18.5359 241.905 18.4682H228.862V24.0169H219.998V1.2807ZM252.918 24.0169V1.2807H280.645V8.48727H261.782V11.2616H278.429V17.9099H261.782V24.0169H252.918ZM36.4503 52.6769L41.7284 38.2807H51.7093L41.7284 61.0169H31.1892L26.1987 49.6488L21.2082 61.0169H10.6691L0.688129 38.2807H10.6691L15.9302 52.6769L21.2082 38.2807H31.1892L36.4503 52.6769ZM63.2973 44.8613L60.1677 51.5773H66.41L63.2973 44.8613ZM45.8222 61.0169L58.0193 38.2807H68.5585L80.7555 61.0169H70.7746L68.9814 57.126H57.5963L55.8032 61.0169H45.8222ZM81.4491 38.2638H103.356C108.042 38.213 112.018 42.1547 111.95 46.8575C111.95 48.5661 111.493 50.1225 110.58 51.5097C109.683 52.8799 108.482 53.9288 106.993 54.6224L111.95 61H102.511L98.2306 55.4513H90.3135V61H81.4491V38.2638ZM101.123 44.9121H90.3135V48.786H101.123C101.665 48.786 102.121 48.6 102.494 48.2278C102.883 47.8387 103.069 47.382 103.069 46.8575C103.069 45.7749 102.206 44.9121 101.123 44.9121ZM114.708 38.2638H136.615C141.301 38.213 145.276 42.1547 145.209 46.8575C145.209 48.5661 144.752 50.1225 143.838 51.5097C142.942 52.8799 141.741 53.9288 140.252 54.6224L145.209 61H135.769L131.489 55.4513H123.572V61H114.708V38.2638ZM134.382 44.9121H123.572V48.786H134.382C134.923 48.786 135.38 48.6 135.752 48.2278C136.141 47.8387 136.327 47.382 136.327 46.8575C136.327 45.7749 135.465 44.9121 134.382 44.9121ZM163.377 44.8613L160.248 51.5773H166.49L163.377 44.8613ZM145.902 61.0169L158.099 38.2807H168.638L180.835 61.0169H170.855L169.061 57.126H157.676L155.883 61.0169H145.902ZM203.707 50.2916V38.2469H212.588V60.9831H202.607L190.393 47.0944V60.9831H181.529V38.2469H193.726L203.707 50.2916ZM235.071 61.0169H226.206V45.4873H215.667V38.2807H245.61V45.4873H235.071V61.0169ZM256.826 38.2807L263.474 46.4346L270.139 38.2807H280.662L267.906 53.2521V61.0169H259.042V53.2521L246.287 38.2807H256.826Z" fill="black"/>
+                    </svg>
+                    
+                </div>
+              </div>
+             
               <div class="row toprow">
+                <p class="details-text">Fill your details to apply for the warranty</p>
+
                 <div class="col-6 mb-3">
                   <label for="customerName" class="form-label namelable"
-                    >Customer Name</label
+                    >Customer Name <span class="reqsym" style="color: #000;">* </span></label
                   >
                   <input
                     type="text"
@@ -639,8 +686,8 @@ div:where(.swal2-container) .swal2-html-container{
                 </div>
                 <div class="col-6 mb-3">
                   <label for="phoneNumber" class="form-label numberlable"
-                    >Phone Number
-                    <span class="text-muted1">(Whatsapp Must)</span></label
+                    >Phone Number<span class="reqsym" style="color: #000;"> * </span> 
+                    </label
                   >
                   <input
                     type="text"
@@ -652,7 +699,7 @@ div:where(.swal2-container) .swal2-html-container{
                 </div>
               </div>
 
-              <h4 class="pt-md-3 vehicleinfo">Vehicle Information</h4>
+              <h4 class="pt-md-3 vehicleinfo">Vehicle Information  <span class="reqsym" style="color: #000;"> * </span></h4>
               <div class="row pt-md-3 gx-4 Vehiclerow">
                 <div class="col-4 mb-3">
                   <label for="Body-Type" class="form-label namelable"
@@ -686,6 +733,7 @@ div:where(.swal2-container) .swal2-html-container{
                     <option value="Ford">Ford</option>
                     <option value="Hyundai">Hyundai</option>
                     <option value="Honda">Honda</option>
+                    <option value="Jeep">Jeep</option>
                     <option value="Kia">Kia</option>
                     <option value="Land Rover">Land Rover</option>
                     <option value="Mahindra">Mahindra</option>
@@ -698,7 +746,6 @@ div:where(.swal2-container) .swal2-html-container{
                     <option value="Tata">Tata</option>
                     <option value="Toyota">Toyota</option>
                     <option value="Volkswagen">Volkswagen</option>
-                    <option value="Jeep">Jeep</option>
                   </select>
                 </div>
                 
@@ -1099,11 +1146,11 @@ div:where(.swal2-container) .swal2-html-container{
             </div>
 
             <div class="yellow-bg">
-              <p class="ps-4 ps-sm-5">
-
-
-                Protection you can count on – <br />
-                <strong> for the product you trust.</strong>
+              <p class="ps-4 ps-sm-5  pt-3">
+                We’ve got you covered Reliable protection - <br> 
+               
+                <strong> for your valued purchase.
+                </strong>
               </p>
             </div>
           </div>
@@ -1157,7 +1204,7 @@ div:where(.swal2-container) .swal2-html-container{
                 <label
                   for="serviceDate"
                   class="form-label col-6 col-sm-7 service-lable"
-                  >Service Date</label
+                  >Service Date  <span class="reqsym" style="color: #fff;"> * </span> </label
                 >
                 <input
                   type="date"
@@ -1174,7 +1221,7 @@ div:where(.swal2-container) .swal2-html-container{
               <div class="form-group filebox">
                 <div>
                   <label for="vehiclePicture" class="form-label service-lable"
-                    >Upload picture of vehicle</label
+                    >Upload picture of vehicle  <span class="reqsym" style="color: #fff;"> * </span> </label
                   >
                   <small class="form-text"
                     >
@@ -1205,7 +1252,7 @@ div:where(.swal2-container) .swal2-html-container{
 
             <div class="d-flex align-items-center amountfild">
               <label for="amountPaid" class="form-label col-7 service-lable"
-                >Total Amount Paid</label
+                >Total Amount Paid  <span class="reqsym" style="color: #fff;"> * </span> </label
               >
               <input
                 type="text"
@@ -1224,7 +1271,8 @@ div:where(.swal2-container) .swal2-html-container{
                 required
               />
               <label class="form-check-label" for="privacyPolicy">
-                I agree to all the details in the field above
+                I accept and confirm that the details provided above are accurate
+                <!-- I agree to all the details in the field above -->
               </label>
             </div>
             <button type="submit" class="btn w-100 submitbtn mt-sm-2">
