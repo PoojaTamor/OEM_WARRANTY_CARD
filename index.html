@@ -26,6 +26,7 @@
       * {
         margin: 0px;
         padding: 0px;
+        box-sizing: border-box;
       }
       body {
         /* background-color: #f4f4f4; */
@@ -469,7 +470,7 @@ div:where(.swal2-container) .swal2-html-container{
   margin-top: 38px;
 }
 .backbround {
-    background-image: url("./image.png");
+    background-image: url("./oem.png");
     background-repeat: no-repeat;
     background-size: 57%;
     background-position: 90%  4%;
@@ -479,6 +480,33 @@ div:where(.swal2-container) .swal2-html-container{
       font-size: 13px;
      }
 /* ========heading2=============== */
+@media (max-width: 1024px) {
+  input[type="date"] {
+
+    font-size: 12px;
+    width: 130px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.radio-container .radio-label {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+}
+.bottom-text {
+    color: #dbdbdb;
+    font-size: 14px;
+    font-weight: 400;
+}
+.form-check-label {
+    font-size: 11px;
+}
+.Vehiclerow input[type="text"] {
+    padding: 10px 10px;
+    width: 188px;
+}
+}
       @media (max-width: 768px) {
         .warranty-card {
           flex-direction: column;
@@ -654,9 +682,6 @@ div:where(.swal2-container) .swal2-html-container{
   display: flex;
   justify-content: space-between;
 
-}
-        .bottomcopyright {
-    font-size: 12px;
 }
 
 .sidelogo {
@@ -1208,7 +1233,7 @@ div:where(.swal2-container) .swal2-html-container{
               Services <span class="fw-bold text-white Covered"> Covered</span>
             </h3>
             <p class="bottom-text col-sm-8">
-              Select the PPF series you have chosen for your car
+              Select the PPF series you have choose for your car
             </p>
             <!-- <div class="radio-buttons my-4">
               <label class="radio-container">
@@ -1251,7 +1276,7 @@ div:where(.swal2-container) .swal2-html-container{
               >
                 <label
                   for="serviceDate"
-                  class="form-label col-6 col-sm-7 service-lable"
+                  class="form-label col-6 col-sm-6 service-lable"
                   >Service Date  <span class="reqsym" style="color: #fff;"> * </span> </label
                 >
                 <input
